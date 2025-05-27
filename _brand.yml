@@ -1,0 +1,12 @@
+color: 
+  primary: "#178474"
+  secondary: "#5ca89d"
+  tertiary: "#c9f8ef"
+typography:
+  fonts:
+    - family: Open Sans
+      source: google
+    - family: Roboto Slab
+      source: google
+    - family: Fira Code
+      source: google

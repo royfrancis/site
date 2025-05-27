@@ -1,2 +1,3 @@
 # site
-This is my awesome website
+
+An example quarto website.

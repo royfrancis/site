@@ -1,0 +1,22 @@
+project: 
+  type: website
+  output-dir: docs
+
+website: 
+  title: Michelle Logan
+  description: A website built with Quarto
+  navbar:
+    title: Michelle Logan
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Blog
+        href: blog/index.qmd 
+      - text: About
+        href: about.qmd
+  page-footer:
+    left: &#169; 2025 Michelle Logan
+    right: Made with [Quarto](https://quarto.org)
+
+execute: 
+  freeze: true

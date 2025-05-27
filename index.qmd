@@ -1,0 +1,41 @@
+---
+pagetitle: Home
+title: "Michelle Logan"
+subtitle: "Welcome to Michelle's world of code!"
+image: assets/images/hero.webp
+
+about:
+  template: solana
+  image-width: 25em
+  id: hero-heading
+
+listing:
+- id: blog-preview
+  contents: 
+    - blog/*/*.qmd
+  sort: false
+  type: grid
+  grid-columns: 3
+  max-items: 3
+  image-height: 150px
+  fields: [image, title]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: false
+page-layout: full
+---
+
+::: { #hero-heading }
+
+This is my personal space where I share my thoughts, projects, and experiences in the world of software development. You can find my latest blog posts, projects, and more about me here.
+I'm passionate about open source, data science, and machine learning. I love building tools that make data analysis more accessible and efficient. Feel free to explore my work and connect with me on social media!
+
+[[**About me >**]{.btn .btn-primary .btn-md}](about.qmd)
+
+:::
+
+## Latest Blog Posts
+
+:::{ #blog-preview }
+:::

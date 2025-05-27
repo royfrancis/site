@@ -1,0 +1,17 @@
+{
+  "hash": "933b04d5c876769d07ae8d76108ff07e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Combining plots in ggplot2\nsubtitle: Arranging multiple ggplot2 plots side by side in R using patchwork\nauthor: Michelle Logan\ndate: 2025-05-27\ncategories:\n  - R\n  - ggplot2\n  - visualization\nslug: patchwork\npage-layout: article\nimage: featured.webp\n---\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe need to load the following R libraries:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nlibrary(patchwork)\nlibrary(dplyr)\n```\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCreate two plots:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\np1 <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +\n  geom_point() +\n  labs(title = \"Sepal Length vs Sepal Width\") +\n  theme_minimal()\n\np2 <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +\n  geom_point() +\n  labs(title = \"Weight vs MPG\") +\n  theme_minimal()\n```\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNow we can arrange the two plots side by side using the `patchwork` package:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\np1 + p2\n```\n\n::: {.cell-output-display}\n![Side by side plots using patchwork](index_files/figure-html/fig-side-side-plot-1.png){#fig-side-side-plot width=768}\n:::\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can also customize the layout further, for example by adding a common title or adjusting the spacing:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n(p1 + p2) +\n  plot_layout(ncol = 2) +\n  plot_annotation(title = \"Side by Side Plots in ggplot2\") +\n  theme(plot.title = element_text(hjust = 0.5))\n```\n\n::: {.cell-output-display}\n![Common title](index_files/figure-html/fig-side-side-plot-1-1.png){#fig-side-side-plot-1 width=768}\n:::\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can also position the plots one below the other:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\np1 / p2\n```\n\n::: {.cell-output-display}\n![Top and bottom plots using patchwork](index_files/figure-html/fig-top-bottom-plot-1.png){#fig-top-bottom-plot width=384}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

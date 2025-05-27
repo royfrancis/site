@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/blog/2025-05-27-patchwork/index.html",
+      "/blog/2025-05-30-arranging-quarto-images/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/2025-05-30-arranging-quarto-images/index.html",
+      "/blog/2025-05-27-patchwork/index.html"
+    ]
+  }
+]

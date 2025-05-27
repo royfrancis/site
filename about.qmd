@@ -1,0 +1,25 @@
+---
+title: About
+about:
+  template: solana
+  image: assets/images/profile.webp
+  links: 
+    - icon: github
+      text: Github
+      href: https://github.com/mlogan
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/mlogan.dev 
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/michelle-logan-dev/
+---
+
+### **Hey!** 
+
+Thanks for stopping by!
+
+I'm Michelle Logan, a software engineer and open source enthusiast. I work primarily with R and Python, focusing on data science and machine learning. I have a passion for building tools that make data analysis more accessible and efficient.
+I love contributing to open source projects and collaborating with others in the tech community. My goal is to create software that not only solves problems but also inspires others to explore the world of programming.
+
+When I'm not coding, you can find me hiking, reading, or experimenting with new recipes in the kitchen. I believe in continuous learning and strive to improve my skills every day. I hope you find something useful here, whether it's a blog post, a project, or just a bit of inspiration. Feel free to reach out if you have any questions or just want to chat about tech!
